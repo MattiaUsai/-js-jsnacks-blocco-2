@@ -1,22 +1,16 @@
 
 function countElements (array){
-i=0
-while (array[i]!== undefined){
-    if (array[i] !== undefined){
-        console.log(array[i])
-        i++
-    }
-        
 
+    for ( i=0 ;  array[i]!== undefined; i++){
     
-}
+        if (array[i] !== undefined) console.log(array[i]);     
+    }
     console.log("l'array è lungo ")
     return i;
-
 }
 
 
-const mario = ['mela',  'bamana', 'pera' , 'anguria']
+const mario = ['mela',  'bamana', 'pera' , 'anguria', 'anguriaf', 'anguriae']
 
 
 console.log(countElements(mario));
