@@ -5,20 +5,17 @@
 // SE NELL'ARRAY NON ESISTE QUELL'ELEMENTO ALLORA RETURN = -1
 
 function findElement (array,element){
-    i=0;
-    while(array[i]!==element){
-        i++
-        console.log(array[i])
-        if(array.lenght<i) return -1; 
-
+    i=0; //DICHIARO I = 0
+    while(array[i] !== element){ //FACCIO UN CICLO WHILE CON CONDIZIONE CHE L'ELEMENTO [I] SIA DIVERSO DA ELEMENT 
+        i++ ;//INCREMENTO LA I DI UNO A OGNI CICLO
+        if (array.lenght<i) return -1;
+        
     }
-    return i;
+    return i; //RESTITUISCI LA I 
 }
 
-const mario = ['mela',  'banana', 'pera' , 'anguria', 'kiwi', 'pesca']//CRAO UNA ARRAY CON UN TOT DI ELEMENTI DENTRO
+const input = ['mela',  'banana', 'pera' , 'anguria', 'kiwi', 'pesca']//CRAO UNA ARRAY CON UN TOT DI ELEMENTI DENTRO
 
-console.log(mario, 'anguria')
+console.log(input)
 
-const ciao = 'anguria';
-
-console.log(findElement(mario,ciao))
+console.log(`${findElement(input, 'banana')}`)
