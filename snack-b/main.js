@@ -8,7 +8,7 @@ function findElement (array,element){
     i=0; //DICHIARO I = 0
     while(array[i] !== element){ //FACCIO UN CICLO WHILE CON CONDIZIONE CHE L'ELEMENTO [I] SIA DIVERSO DA ELEMENT 
         i++ ;//INCREMENTO LA I DI UNO A OGNI CICLO
-        if (array.lenght<i) return -1;
+        if (array.length<i) return -1;
         
     }
     return i; //RESTITUISCI LA I 
@@ -18,4 +18,4 @@ const input = ['mela',  'banana', 'pera' , 'anguria', 'kiwi', 'pesca']//CRAO UNA
 
 console.log(input)
 
-console.log(`${findElement(input, 'banana')}`)
+console.log(`${findElement(input, 'anguria')}`)
